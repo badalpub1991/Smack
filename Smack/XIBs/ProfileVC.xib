@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="Smack" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="l4o-eT-sFH" id="DsR-0N-B9F"/>
+                <outlet property="imgProfile" destination="T5H-QB-Jyc" id="bFH-fH-aAb"/>
+                <outlet property="lblEmail" destination="yoZ-sA-RwC" id="0xQ-Q2-Lam"/>
+                <outlet property="lblUserName" destination="GnH-lK-OBy" id="6ip-hk-3RW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4o-eT-sFH" userLabel="bgView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klw-wq-V6N">
+                    <rect key="frame" x="20" y="163.5" width="335" height="360"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtY-7Z-XD7">
+                            <rect key="frame" x="300" y="8" width="28" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="EOZ-O6-7PG"/>
+                                <constraint firstAttribute="height" constant="28" id="MmM-e2-7WV"/>
+                            </constraints>
+                            <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="closeModelButton:" destination="-1" eventType="touchUpInside" id="ScO-Rs-aC5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijI-tN-ut4">
+                            <rect key="frame" x="104" y="49" width="127" height="28"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                            <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="T5H-QB-Jyc">
+                            <rect key="frame" x="117.5" y="92" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="U02-Uj-08f"/>
+                                <constraint firstAttribute="width" constant="100" id="kSr-zA-G11"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="badalpub1991@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-sA-RwC">
+                            <rect key="frame" x="63.5" y="236" width="208" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bx8-m1-PE3">
+                            <rect key="frame" x="133.5" y="311" width="68" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="LogoutButtonPressed:" destination="-1" eventType="touchUpInside" id="GCR-AG-ZuL"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Badal Shah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnH-lK-OBy">
+                            <rect key="frame" x="122" y="207" width="91" height="21"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="360" id="76w-n0-1sF"/>
+                        <constraint firstAttribute="trailing" secondItem="LtY-7Z-XD7" secondAttribute="trailing" constant="7" id="8dc-CJ-0Gn"/>
+                        <constraint firstItem="yoZ-sA-RwC" firstAttribute="top" secondItem="GnH-lK-OBy" secondAttribute="bottom" constant="8" id="8tw-ZB-FZW"/>
+                        <constraint firstItem="ijI-tN-ut4" firstAttribute="top" secondItem="LtY-7Z-XD7" secondAttribute="bottom" constant="13" id="Mzm-6p-QGK"/>
+                        <constraint firstItem="ijI-tN-ut4" firstAttribute="centerX" secondItem="klw-wq-V6N" secondAttribute="centerX" id="O0L-D7-TbF"/>
+                        <constraint firstAttribute="bottom" secondItem="Bx8-m1-PE3" secondAttribute="bottom" constant="13" id="RmV-Ym-KO2"/>
+                        <constraint firstItem="yoZ-sA-RwC" firstAttribute="centerX" secondItem="GnH-lK-OBy" secondAttribute="centerX" id="WWR-EK-GIr"/>
+                        <constraint firstItem="GnH-lK-OBy" firstAttribute="top" secondItem="T5H-QB-Jyc" secondAttribute="bottom" constant="15" id="YPT-hy-7Gt"/>
+                        <constraint firstItem="LtY-7Z-XD7" firstAttribute="top" secondItem="klw-wq-V6N" secondAttribute="top" constant="8" id="dys-Gv-m55"/>
+                        <constraint firstItem="T5H-QB-Jyc" firstAttribute="top" secondItem="ijI-tN-ut4" secondAttribute="bottom" constant="15" id="iI0-I7-w6Y"/>
+                        <constraint firstItem="T5H-QB-Jyc" firstAttribute="centerX" secondItem="ijI-tN-ut4" secondAttribute="centerX" id="s53-qj-0TR"/>
+                        <constraint firstItem="Bx8-m1-PE3" firstAttribute="centerX" secondItem="yoZ-sA-RwC" secondAttribute="centerX" id="uev-aw-Z5q"/>
+                        <constraint firstItem="GnH-lK-OBy" firstAttribute="centerX" secondItem="T5H-QB-Jyc" secondAttribute="centerX" id="wlg-bh-zHc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l4o-eT-sFH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LLT-WK-bJ8"/>
+                <constraint firstItem="klw-wq-V6N" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="RUE-na-7Vt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="klw-wq-V6N" secondAttribute="trailing" constant="20" id="sBx-nA-w9e"/>
+                <constraint firstAttribute="trailing" secondItem="l4o-eT-sFH" secondAttribute="trailing" id="tCj-So-j9J"/>
+                <constraint firstItem="l4o-eT-sFH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tfL-7U-bAi"/>
+                <constraint firstAttribute="bottom" secondItem="l4o-eT-sFH" secondAttribute="bottom" id="xPx-M9-Nmd"/>
+                <constraint firstItem="klw-wq-V6N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ykC-Bp-aUP"/>
+                <constraint firstItem="klw-wq-V6N" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zAL-tl-gED"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-6.5" y="-65.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeButton" width="28" height="28"/>
+        <image name="profileDefault" width="192" height="192"/>
+    </resources>
+</document>
